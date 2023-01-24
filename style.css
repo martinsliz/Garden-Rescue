@@ -15,25 +15,53 @@ body {
 }
 
 .card {
+  flex-wrap: wrap;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid black;
-  background-color: blueviolet;
-  flex-wrap: wrap;
   height: 200px;
-  width: 200px
+  width: 200px;
+  border: 2px solid black;
+  /* background-image: url("/Users/liz/ga_seir19/projects/Think-Spring/ladybug.png"); */
+  
 }
 
-.visible {
-  opacity: 0;
-  background-color: aqua;
-  /* visibility: hidden; */
-  /* visibility: visible; */
-
+.ladybug {
+  background-image: url("/Users/liz/ga_seir19/projects/Think-Spring/ladybug.png");
+  background-size: cover;
 }
 
-.card img {
+
+
+.invisible
+{
+  visibility: hidden;
+}
+
+/* .visible {
+  visibility: visible
+} */
+
+img {
 height: 200px;
 width: 200px
 }
+
+.container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 90px;
+  border: 2px solid black;
+
+}
+
+.scoreboard {
+  display: flex;
+  width: 90px;
+  height: 90px;
+  border: 2px solid black;
+}
+
