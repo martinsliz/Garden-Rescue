@@ -32,7 +32,7 @@ const checkMatch = (photo, element) => {
     choiceTwo = photo
     elementTwo = element //keeps track of element that was clicked
     if (choiceOne === choiceTwo) {
-      scoreBoard.innerHTML = 'Your Matches <br/>' + score + 1
+      scoreBoard.innerHTML = 'Your Matches <br/><br/>' + score + 1
       // win conditions // update score here
       console.log('win')
       choiceOne = ''
