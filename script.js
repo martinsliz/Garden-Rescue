@@ -9,7 +9,6 @@ let picture
 const flipCard = (e) => {
   picture = e.target.getAttribute('picture')
   e.target.classList.toggle(picture)
-  console.log('hello!' + picture)
   checkMatch(picture, e.target) //e.target represents target element clicked
 }
 
@@ -22,29 +21,28 @@ let choiceOne = ''
 let elementOne = ''
 let choiceTwo = ''
 let elementTwo = ''
-let score = 0
+let matches = 0
 let scoreBoard = document.querySelector('.scoreboard')
+// scoreBoard.innerText = `${score}`
 
 const checkMatch = (photo, element) => {
-  console.log(choiceOne)
   if (choiceOne.length > 0) {
     //if there is something in there
     choiceTwo = photo
     elementTwo = element //keeps track of element that was clicked
     if (choiceOne === choiceTwo) {
-      scoreBoard.innerHTML = 'Your Matches <br/><br/>' + score + 1
+      document.querySelector('h2').innerHTML = 'Great job, you made a match!'
+      scoreBoard.innerHTML = `Your Matches<br/><br/> ${(matches += 1)}`
       // win conditions // update score here
-      console.log('win')
       choiceOne = ''
       elementOne = ''
       choiceTwo = '' //resets choices back to empty
       elementTwo = ''
+      if (matches === 1)
+        alert('You did it, you put the garden back together again!')
     } else {
-      console.log('no match')
-      //no match, try again
+      document.querySelector('h3').innerHTML = 'No match, try again!'
       const removeAttr = () => {
-        console.log(elementOne)
-        console.log(elementTwo)
         elementOne.classList.remove(choiceOne)
         elementTwo.classList.remove(choiceTwo)
         choiceOne = ''
@@ -52,7 +50,7 @@ const checkMatch = (photo, element) => {
         choiceTwo = ''
         elementTwo = ''
       }
-      setTimeout(removeAttr, 2000)
+      setTimeout(removeAttr, 3000)
     }
   } else {
     choiceOne = photo

@@ -1,7 +1,7 @@
-/* body {
+body {
   text-align: center;
   align-content: center;
-} */
+}
 
 .board {
   display: flex;
@@ -10,7 +10,7 @@
   flex-wrap: wrap;
   border: 2px solid black;
   height: 680px;
-  width: 880px;
+  width: 860px;
   margin: auto;
 }
 
@@ -36,36 +36,34 @@
   background-size: cover;
 }
 
-
-
 .invisible
 {
   visibility: hidden;
 }
 
-
 img {
-height: 200px;
-width: 200px
+height: 100px;
+width: 100px
 }
 
 .container {
   display: flex;
   float: right;
   text-align: center;
-  width: 300px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   border: 2px solid black;
-  margin: 0;
+  margin-left:auto;
+  margin-right:auto;
   position: relative;
-  transform: translate(-50%, -400%)
+  transform: translate(-90%, -250%)
 
 }
 
 .scoreboard {
   display: flex;
-  width: 300px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   border: 2px solid black;
 }
 
