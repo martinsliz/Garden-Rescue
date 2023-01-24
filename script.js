@@ -3,16 +3,14 @@ const startButton = document.getElementById('play')
 
 // const resetButton = document.querySelector('.reset')
 
-///////////function PlayerTurn/////////////////////
-
 ///////////function Flip card, player flips card to reveal image//////////////////////
 const card = document.querySelectorAll('.card')
-let banana
+let picture
 const flipCard = (e) => {
-  banana = e.target.getAttribute('banana')
-  e.target.classList.toggle(banana)
-  console.log('hello!' + banana)
-  checkMatch(banana, e.target) //e.target represents target element clicked
+  picture = e.target.getAttribute('picture')
+  e.target.classList.toggle(picture)
+  console.log('hello!' + picture)
+  checkMatch(picture, e.target) //e.target represents target element clicked
 }
 
 card.forEach((card) => {
@@ -24,16 +22,17 @@ let choiceOne = ''
 let elementOne = ''
 let choiceTwo = ''
 let elementTwo = ''
-let scoreBoard = document.querySelector('.scoreboard')
 let score = 0
+let scoreBoard = document.querySelector('.scoreboard')
 
-const checkMatch = (apple, element) => {
+const checkMatch = (photo, element) => {
   console.log(choiceOne)
   if (choiceOne.length > 0) {
     //if there is something in there
-    choiceTwo = apple
+    choiceTwo = photo
     elementTwo = element //keeps track of element that was clicked
     if (choiceOne === choiceTwo) {
+      scoreBoard.innerHTML = 'Your Matches <br/>' + score + 1
       // win conditions // update score here
       console.log('win')
       choiceOne = ''
@@ -43,7 +42,6 @@ const checkMatch = (apple, element) => {
     } else {
       console.log('no match')
       //no match, try again
-      // document.querySelector.choiceOne.removeAttribute('banana')
       const removeAttr = () => {
         console.log(elementOne)
         console.log(elementTwo)
@@ -57,7 +55,7 @@ const checkMatch = (apple, element) => {
       setTimeout(removeAttr, 2000)
     }
   } else {
-    choiceOne = apple
+    choiceOne = photo
     elementOne = element //First choice, if they haven't made one
   }
 }

@@ -57,16 +57,16 @@ width: 200px
   flex-direction: row-reverse;
   justify-content: center;
   align-items: center;
-  width: 90px;
-  height: 90px;
+  width: 300px;
+  height: 100px;
   border: 2px solid black;
 
 }
 
 .scoreboard {
   display: flex;
-  width: 90px;
-  height: 90px;
+  width: 300px;
+  height: 100px;
   border: 2px solid black;
 }
 
