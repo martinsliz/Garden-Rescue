@@ -1,7 +1,4 @@
 const gameBoard = document.querySelectorAll('board')
-// const playerOne =
-// const playerTwo =
-// const currentPlayer = playerOne
 const startButton = document.getElementById('play')
 
 // const resetButton = document.querySelector('.reset')
@@ -10,13 +7,12 @@ const startButton = document.getElementById('play')
 
 ///////////function Flip card, player flips card to reveal image//////////////////////
 const card = document.querySelectorAll('.card')
-
-flipCard = (e) => {
-  // setTimeout(() => e.target.classList.toggle('invisible'))
-  const banana = e.target.getAttribute('banana')
+let banana
+const flipCard = (e) => {
+  banana = e.target.getAttribute('banana')
   e.target.classList.toggle(banana)
   console.log('hello!' + banana)
-  checkMatch(banana)
+  checkMatch(banana, e.target) //e.target represents target element clicked
 }
 
 card.forEach((card) => {
@@ -24,47 +20,46 @@ card.forEach((card) => {
 })
 
 ////////////////////////////function checkMatch///////////////////////////////////////
-//
 let choiceOne = ''
+let elementOne = ''
 let choiceTwo = ''
+let elementTwo = ''
+let scoreBoard = document.querySelector('.scoreboard')
+let score = 0
 
-const checkMatch = (apple) => {
+const checkMatch = (apple, element) => {
+  console.log(choiceOne)
   if (choiceOne.length > 0) {
+    //if there is something in there
     choiceTwo = apple
+    elementTwo = element //keeps track of element that was clicked
     if (choiceOne === choiceTwo) {
-      // win conditions
+      // win conditions // update score here
       console.log('win')
       choiceOne = ''
-      choiceTwo = ''
+      elementOne = ''
+      choiceTwo = '' //resets choices back to empty
+      elementTwo = ''
     } else {
       console.log('no match')
-      // write a query selector or get elements by class and pass in ChoiceOne[0] and remove anything w/ class "ladybug/choiceOne" and toggle it off, same for choiceTwo, that will flip them back over
-      choiceOne = ''
-      choiceTwo = ''
+      //no match, try again
+      // document.querySelector.choiceOne.removeAttribute('banana')
+      const removeAttr = () => {
+        console.log(elementOne)
+        console.log(elementTwo)
+        elementOne.classList.remove(choiceOne)
+        elementTwo.classList.remove(choiceTwo)
+        choiceOne = ''
+        elementOne = ''
+        choiceTwo = ''
+        elementTwo = ''
+      }
+      setTimeout(removeAttr, 2000)
     }
   } else {
     choiceOne = apple
+    elementOne = element //First choice, if they haven't made one
   }
 }
-
-// let choiceOne = banana
-// let choiceTwo = ''
-// if choiceOne.length > 0
-// if choiceTwo.length >0
-// find id and give it an ! and it will supersede
-/////////////function Update Score, when player makes a match the scoreboard updates////////////////////
-let scoreBoard = document.querySelector('.scoreboard')
-let score = 0
-// let image = document.querySelector(img.src)
-
-// upDateScore = () => {
-//   if ( === ) {
-//     for (let i = 0; i < matches.length; i++) {
-//       score = score += 2
-//     }
-//     scoreBoard.innerHTML = `${score}`
-//   }
-// }
-// console.log('This works' + upDateScore())
 
 /////////////function play again resets board////////////////////

@@ -31,6 +31,11 @@ body {
   background-size: cover;
 }
 
+.bee {
+  background-image: url("/Users/liz/ga_seir19/projects/Think-Spring/bee.png");
+  background-size: cover;
+}
+
 
 
 .invisible
