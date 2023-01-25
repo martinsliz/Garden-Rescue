@@ -1,7 +1,6 @@
 const gameBoard = document.querySelectorAll('board')
-const startButton = document.getElementById('play')
-
-// const resetButton = document.querySelector('.reset')
+const playButton = document.getElementsByClassName('play')
+const resetButton = document.getElementById('reset')
 
 ///////////function Flip card, player flips card to reveal image//////////////////////
 const card = document.querySelectorAll('.card')
@@ -23,7 +22,6 @@ let choiceTwo = ''
 let elementTwo = ''
 let matches = 0
 let scoreBoard = document.querySelector('.scoreboard')
-// scoreBoard.innerText = `${score}`
 
 const checkMatch = (photo, element) => {
   if (choiceOne.length > 0) {
@@ -36,10 +34,14 @@ const checkMatch = (photo, element) => {
       // win conditions // update score here
       choiceOne = ''
       elementOne = ''
-      choiceTwo = '' //resets choices back to empty
+      choiceTwo = ''
       elementTwo = ''
-      if (matches === 1)
-        alert('You did it, you put the garden back together again!')
+      if (matches === 1) {
+        setTimeout(
+          () => alert('You did it, you put the garden back together again!'),
+          3000
+        )
+      }
     } else {
       document.querySelector('h3').innerHTML = 'No match, try again!'
       const removeAttr = () => {
@@ -54,8 +56,9 @@ const checkMatch = (photo, element) => {
     }
   } else {
     choiceOne = photo
-    elementOne = element //First choice, if they haven't made one
+    elementOne = element
   }
 }
 
-/////////////function play again resets board////////////////////
+/////////////play again resets board////////////////////
+resetButton.addEventListener('click', () => location.reload())

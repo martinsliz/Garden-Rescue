@@ -3,15 +3,30 @@ body {
   align-content: center;
 }
 
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
 .board {
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
   border: 2px solid black;
   height: 680px;
   width: 860px;
   margin: auto;
+}
+
+.scoreboard {
+  display: flex;
+  text-align: center;
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+
 }
 
 .card {
@@ -22,7 +37,8 @@ body {
   height: 200px;
   width: 200px;
   border: 2px solid black;
-  /* background-image: url("/Users/liz/ga_seir19/projects/Think-Spring/ladybug.png"); */
+  background-image: url("/Users/liz/ga_seir19/projects/u1_hw_tic_tac_toe/summer-garden-flowers.jpg");
+  background-size: cover;
   
 }
 
@@ -46,24 +62,5 @@ height: 100px;
 width: 100px
 }
 
-.container {
-  display: flex;
-  float: right;
-  text-align: center;
-  width: 200px;
-  height: 200px;
-  border: 2px solid black;
-  margin-left:auto;
-  margin-right:auto;
-  position: relative;
-  transform: translate(-90%, -250%)
 
-}
-
-.scoreboard {
-  display: flex;
-  width: 200px;
-  height: 200px;
-  border: 2px solid black;
-}
 
