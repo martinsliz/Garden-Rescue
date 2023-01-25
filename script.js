@@ -5,17 +5,19 @@ const resetButton = document.getElementById('reset')
 ///////////function Flip card, player flips card to reveal image//////////////////////
 const card = document.querySelectorAll('.card')
 let picture
+let element
+
 const flipCard = (e) => {
   picture = e.target.getAttribute('picture')
   e.target.classList.toggle(picture)
-  checkMatch(picture, e.target) //e.target represents target element clicked
+  e.target.removeEventListener('click', flipCard)
+  checkMatch(picture, e.target)
 }
 
 card.forEach((card) => {
   card.addEventListener('click', flipCard)
 })
 
-////////////////////////////function checkMatch///////////////////////////////////////
 let choiceOne = ''
 let elementOne = ''
 let choiceTwo = ''
@@ -23,36 +25,41 @@ let elementTwo = ''
 let matches = 0
 let scoreBoard = document.querySelector('.scoreboard')
 
+////////////////////////////function checkMatch///////////////////////////////////////
+
 const checkMatch = (photo, element) => {
+  console.log(photo)
+  console.log(element)
   if (choiceOne.length > 0) {
-    //if there is something in there
     choiceTwo = photo
-    elementTwo = element //keeps track of element that was clicked
+    elementTwo = element
     if (choiceOne === choiceTwo) {
-      document.querySelector('h2').innerHTML = 'Great job, you made a match!'
+      setTimeout(() => alert('Great job, you made a match!'), 900)
       scoreBoard.innerHTML = `Your Matches<br/><br/> ${(matches += 1)}`
-      // win conditions // update score here
+
       choiceOne = ''
       elementOne = ''
       choiceTwo = ''
       elementTwo = ''
-      if (matches === 1) {
+      if (matches === 2) {
         setTimeout(
           () => alert('You did it, you put the garden back together again!'),
-          3000
+          3500
         )
       }
     } else {
-      document.querySelector('h3').innerHTML = 'No match, try again!'
       const removeAttr = () => {
+        setTimeout(() => alert('No match, try again!'), 850)
         elementOne.classList.remove(choiceOne)
         elementTwo.classList.remove(choiceTwo)
+        elementOne.addEventListener('click', flipCard)
+        elementTwo.addEventListener('click', flipCard)
         choiceOne = ''
         elementOne = ''
         choiceTwo = ''
         elementTwo = ''
       }
-      setTimeout(removeAttr, 3000)
+      setTimeout(removeAttr, 2000)
     }
   } else {
     choiceOne = photo
