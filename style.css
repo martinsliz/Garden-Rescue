@@ -32,7 +32,6 @@ body {
   height: 200px;
   border: 2px solid black;
   margin-right: 50px;
-
 }
 
 .card {
@@ -47,10 +46,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  user-select: none;
-
-  
-  
+  user-select: none;  
 }
 
 .ladybug {
@@ -65,24 +61,38 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  
-  
 }
 
-.flower{
-  background-image: url("https://i.imgur.com/w68mHIF.png");
+.broccoli {
+  background-image: url("/Users/liz/ga_seir19/projects/Think-Spring/Broccoli.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.tulip{
-  background-image: url("https://i.imgur.com/OVpKRoG.jpg");
-
+.butterfly {
+  background-image: url("/Users/liz/ga_seir19/projects/Think-Spring/Butterfly.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .carrot {
   background-image: url("/Users/liz/ga_seir19/projects/Think-Spring/carrot.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* .flower{
+  background-image: url("https://i.imgur.com/w68mHIF.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+} */
+
+.tools {
+  background-image: url("/Users/liz/ga_seir19/projects/Think-Spring/GrdnTools.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
