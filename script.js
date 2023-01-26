@@ -1,11 +1,11 @@
 const gameBoard = document.querySelectorAll('board')
-const playButton = document.getElementsByClassName('play')
+const playButton = document.querySelector('button')
 const resetButton = document.getElementById('reset')
-
-///////////function Flip card, player flips card to reveal image//////////////////////
 const card = document.querySelectorAll('.card')
 let picture
 let element
+
+// Player flips card(s) to reveal image
 
 const flipCard = (e) => {
   picture = e.target.getAttribute('picture')
@@ -25,7 +25,7 @@ let elementTwo = ''
 let matches = 0
 let scoreBoard = document.querySelector('.scoreboard')
 
-////////////////////////////function checkMatch///////////////////////////////////////
+// Compare cards for matches, tallying number of matches in background
 
 const checkMatch = (photo, element) => {
   if (choiceOne.length > 0) {
@@ -34,14 +34,16 @@ const checkMatch = (photo, element) => {
     if (choiceOne === choiceTwo) {
       setTimeout(() => alert('Great job, you made a match!'), 900)
       matches = matches += 1
-      console.log(matches)
       choiceOne = ''
       elementOne = ''
       choiceTwo = ''
       elementTwo = ''
       if (matches === 6) {
         setTimeout(
-          () => alert('You did it, you put the garden back together again!'),
+          () =>
+            alert(
+              'You did it, you put the garden back together again! Thank you!'
+            ),
           3500
         )
       }
@@ -57,7 +59,7 @@ const checkMatch = (photo, element) => {
         choiceTwo = ''
         elementTwo = ''
       }
-      setTimeout(removeAttr, 2000)
+      setTimeout(removeAttr, 1500)
     }
   } else {
     choiceOne = photo
@@ -65,5 +67,5 @@ const checkMatch = (photo, element) => {
   }
 }
 
-/////////////play again resets board////////////////////
+// Board reset
 resetButton.addEventListener('click', () => location.reload())
