@@ -31,10 +31,10 @@ A garden themed memory card game! Geared toward small children, a player must fi
 
 ---
 
-### Task Lists
+### Future updates
 
-- [ ] Approval
-- [ ] Establish code
+- [ ] Add additional level
+- [ ] Add music / sounds
 
 ---
 
@@ -42,4 +42,10 @@ A garden themed memory card game! Geared toward small children, a player must fi
 
 #### Resources: [MDN](https://developer.mozilla.org/en-US/), [W3Schools](https://www.w3schools.com/), [Google Fonts](https://fonts.google.com/specimen/Eczar?query=eczar), [Imgur](https://imgur.com/)
 
-#### Images: [Unsplash](https://images.unsplash.com/photo-1610332262984-c4b37b09bf8f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bGFzZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60)
+#### Images: [Open Clipart](https://openclipart.org)
+
+#### Images: [Public Domain Vectors](https://publicdomainvectors.org)
+
+#### Images: [Vector Portal](https://vectorportal.com)
+
+#### Images: [Vector Stock](https://vectorstock.com)
