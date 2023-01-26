@@ -32,19 +32,34 @@ const checkMatch = (photo, element) => {
     choiceTwo = photo
     elementTwo = element
     if (choiceOne === choiceTwo) {
-      setTimeout(() => alert('Great job, you made a match!'), 900)
+      // setTimeout(() => alert('Great job, you made a match!'), 900)
       matches = matches += 1
       choiceOne = ''
       elementOne = ''
       choiceTwo = ''
       elementTwo = ''
+      if (matches === 1) {
+        setTimeout(() => alert('Great job, your first match!'), 800)
+      }
+      if (matches === 2) {
+        setTimeout(() => alert('Another match!'), 900)
+      }
+      if (matches === 3) {
+        setTimeout(() => alert('Excellent!'), 750)
+      }
+      if (matches === 4) {
+        setTimeout(() => alert('Almost there, keep it up!'), 750)
+      }
+      if (matches === 5) {
+        setTimeout(() => alert("One more, you've got this!"), 800)
+      }
       if (matches === 6) {
         setTimeout(
           () =>
             alert(
-              'You did it, you put the garden back together again! Thank you!'
+              'You did it!! Thanks to you the garden is in tip-top shape again!'
             ),
-          3500
+          1500
         )
       }
     } else {
