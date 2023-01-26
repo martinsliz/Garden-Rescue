@@ -29,14 +29,13 @@ let scoreBoard = document.querySelector('.scoreboard')
 
 const checkMatch = (photo, element) => {
   console.log(photo)
-  console.log(element)
+  // console.log(element)
   if (choiceOne.length > 0) {
     choiceTwo = photo
     elementTwo = element
     if (choiceOne === choiceTwo) {
       setTimeout(() => alert('Great job, you made a match!'), 900)
       scoreBoard.innerHTML = `Your Matches<br/><br/> ${(matches += 1)}`
-
       choiceOne = ''
       elementOne = ''
       choiceTwo = ''

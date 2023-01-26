@@ -1,6 +1,10 @@
 body {
   text-align: center;
   align-items: center;
+  background-image: url("/Users/liz/ga_seir19/projects/Think-Spring/garden.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .main {
@@ -14,10 +18,11 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  border: 2px solid black;
-  height: 680px;
-  width: 860px;
+  border: 2px solid white;
+  height: 630px;
+  width: 810px;
   margin: auto;
+  background-color: white;
 }
 
 .scoreboard {
@@ -49,8 +54,8 @@ body {
 }
 
 .ladybug {
-  background-image: url("/Users/liz/ga_seir19/projects/Think-Spring/ladybug.png");
-  background-size: 80%;
+  background-image: url("/Users/liz/ga_seir19/projects/Think-Spring/ladybg.png");
+  background-size: 95%;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -64,14 +69,26 @@ body {
   
 }
 
+.flower{
+  background-image: url("https://i.imgur.com/w68mHIF.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .tulip{
   background-image: url("https://i.imgur.com/OVpKRoG.jpg");
 
 }
 
-.event{
-  pointer-events: none;
+.carrot {
+  background-image: url("/Users/liz/ga_seir19/projects/Think-Spring/carrot.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
+
+
 
 
 
