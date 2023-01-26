@@ -1,25 +1,40 @@
 body {
   text-align: center;
-  align-items: center;
-  justify-content: center;
   font-family: 'Eczar', serif;
   background-image: url("/Users/liz/ga_seir19/projects/Garden Rescue/Images/Garden.png");
-  height: 100%;
+  height: 100vh;
+  width: 100vw;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  
+}
+
+h1{
+  font-size: 50px;
+  color: ;
 }
 
 .story {
   display: flex;
-  justify-content: center;
+  /* flex-wrap: wrap; */
+  /* height: 600px;
+  width: 600px; */
+  text-align: center;
   align-items: center;
-  flex-wrap: wrap;
-  border: 3px solid rgb(233, 240, 12);
-  height: 530px;
-  width: 610px;
   margin: auto;
-  background-color: white;
+  background-image: url("/Users/liz/ga_seir19/projects/Garden Rescue/Images/Paper_Scroll_2.svg.png");
+  /* height: 80vh;
+  width: 80vw; */
+  /* background-size: contain; */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent
+}
+
+.hello{
+  font-size: 22px;
+  list-style-type: none;
 }
 
 
@@ -38,17 +53,9 @@ body {
   height: 630px;
   width: 810px;
   margin: auto;
-  background-color: white;
+  background-color: transparent;
 }
 
-.scoreboard {
-  display: flex;
-  text-align: center;
-  width: 200px;
-  height: 200px;
-  border: 2px solid black;
-  margin: auto;
-}
 
 .card {
   flex-wrap: wrap;
@@ -59,7 +66,7 @@ body {
   width: 200px;
   border: 1px solid rgb(231, 238, 22);
   background-image: url("/Users/liz/ga_seir19/projects/Garden Rescue/Images/Flowers.png");
-  background-color: rgb(49, 184, 184);
+  background-color: rgb(96, 58, 184);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -68,7 +75,7 @@ body {
 
 .ladybug {
   background-image: url("/Users/liz/ga_seir19/projects/Garden Rescue/Images/Ladybug.png");
-  background-size: 98%;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
