@@ -1,11 +1,27 @@
 body {
   text-align: center;
   align-items: center;
-  background-image: url("/Users/liz/ga_seir19/projects/Think-Spring/garden.png");
+  justify-content: center;
+  font-family: 'Eczar', serif;
+  background-image: url("/Users/liz/ga_seir19/projects/Garden Rescue/Images/Garden.png");
+  height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
+
+.story {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border: 3px solid rgb(233, 240, 12);
+  height: 530px;
+  width: 610px;
+  margin: auto;
+  background-color: white;
+}
+
 
 .main {
   display: flex;
@@ -18,7 +34,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  border: 2px solid white;
+  border: 3px solid rgb(233, 240, 12);
   height: 630px;
   width: 810px;
   margin: auto;
@@ -31,7 +47,7 @@ body {
   width: 200px;
   height: 200px;
   border: 2px solid black;
-  margin-right: 50px;
+  margin: auto;
 }
 
 .card {
@@ -41,8 +57,9 @@ body {
   align-items: center;
   height: 200px;
   width: 200px;
-  border: 1px solid black;
-  /* background-image: url("https://i.imgur.com/OVpKRoG.jpg"); */
+  border: 1px solid rgb(231, 238, 22);
+  background-image: url("/Users/liz/ga_seir19/projects/Garden Rescue/Images/Flowers.png");
+  background-color: rgb(49, 184, 184);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -50,52 +67,50 @@ body {
 }
 
 .ladybug {
-  background-image: url("/Users/liz/ga_seir19/projects/Think-Spring/ladybg.png");
-  background-size: 95%;
+  background-image: url("/Users/liz/ga_seir19/projects/Garden Rescue/Images/Ladybug.png");
+  background-size: 98%;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .bee {
-  background-image: url("/Users/liz/ga_seir19/projects/Think-Spring/bee.png");
+  background-image: url("/Users/liz/ga_seir19/projects/Garden Rescue/Images/Bee.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .broccoli {
-  background-image: url("/Users/liz/ga_seir19/projects/Think-Spring/Broccoli.png");
+  background-image: url("/Users/liz/ga_seir19/projects/Garden Rescue/Images/Broccoli.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .butterfly {
-  background-image: url("/Users/liz/ga_seir19/projects/Think-Spring/Butterfly.png");
+  background-image: url("/Users/liz/ga_seir19/projects/Garden Rescue/Images/Butterfly.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .carrot {
-  background-image: url("/Users/liz/ga_seir19/projects/Think-Spring/carrot.png");
+  background-image: url("/Users/liz/ga_seir19/projects/Garden Rescue/Images/Carrot.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-/* .flower{
-  background-image: url("https://i.imgur.com/w68mHIF.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-} */
 
 .tools {
-  background-image: url("/Users/liz/ga_seir19/projects/Think-Spring/GrdnTools.png");
+  background-image: url("/Users/liz/ga_seir19/projects/Garden Rescue/Images/GrdnTools.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.reset{
+
 }
 
 
