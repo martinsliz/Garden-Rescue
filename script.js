@@ -5,7 +5,7 @@ const card = document.querySelectorAll('.card')
 let picture
 let element
 
-// Player flips card(s) to reveal image
+// Player flips card to reveal image
 
 const flipCard = (e) => {
   picture = e.target.getAttribute('picture')

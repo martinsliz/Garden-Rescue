@@ -40,6 +40,17 @@ h1{
 
 }
 
+.music{
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 40px;
+
+}
+
+audio{
+  background-color: transparent;
+}
+
 .hello{
   display: flex;
   align-self: center;
