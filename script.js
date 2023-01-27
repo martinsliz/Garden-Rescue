@@ -32,7 +32,6 @@ const checkMatch = (photo, element) => {
     choiceTwo = photo
     elementTwo = element
     if (choiceOne === choiceTwo) {
-      // setTimeout(() => alert('Great job, you made a match!'), 900)
       matches = matches += 1
       choiceOne = ''
       elementOne = ''

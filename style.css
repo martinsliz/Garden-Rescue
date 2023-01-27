@@ -1,71 +1,62 @@
 body {
   text-align: center;
   font-family: 'Eczar', serif;
-  background-image: url("./Images/Garden.png");
+  background-image: url('./Images/Garden.png');
   height: 100vh;
   width: 100vw;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  
 }
 
-
-
-h1{
+h1 {
   margin-top: 80px;
   font-size: 55px;
   color: yellow;
   text-shadow: 1px 1px rgb(57, 9, 57);
-
 }
 .save {
   margin-top: -30px;
   font-size: 35px;
   color: yellow;
   text-shadow: 1px 1px rgb(57, 9, 57);
-
 }
 
 .container {
   display: flex;
   align-self: center;
-  margin:auto;
+  margin: auto;
   height: 780px;
   width: 780px;
-  background-image: url("./Images/Scroll.png");
+  background-image: url('./Images/Scroll.png');
   background-size: 75%;
   background-repeat: no-repeat;
   background-position: center;
-
 }
 
-.music{
+.music {
   display: flex;
   flex-direction: row-reverse;
   margin-right: 40px;
-
 }
 
-audio{
+audio {
   background-color: transparent;
 }
 
-.hello{
+.hello {
   display: flex;
   align-self: center;
-  margin:auto;
+  margin: auto;
   height: 500px;
   width: 400px;
-
 }
 
-h2{
+h2 {
   font-size: 22px;
   color: rgb(57, 9, 57);
   text-shadow: 1px 1px white;
 }
-
 
 .main {
   display: flex;
@@ -85,7 +76,6 @@ h2{
   background-color: transparent;
 }
 
-
 .card {
   flex-wrap: wrap;
   display: flex;
@@ -94,57 +84,55 @@ h2{
   height: 200px;
   width: 200px;
   border: 1px solid rgb(231, 238, 22);
-  background-image: url("./Images/Flowers.png");
+  background-image: url('./Images/Flowers.png');
   background-color: rgb(96, 58, 184);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  user-select: none;  
+  user-select: none;
 }
 
 .ladybug {
-  background-image: url("./Images/Ladybug.png");
+  background-image: url('./Images/Ladybug.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .bee {
-  background-image: url("./Images/Bee.png");
+  background-image: url('./Images/Bee.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .broccoli {
-  background-image: url("./Images/Broccoli.png");
+  background-image: url('./Images/Broccoli.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .butterfly {
-  background-image: url("./Images/Butterfly.png");
+  background-image: url('./Images/Butterfly.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .carrot {
-  background-image: url("./Images/Carrot.png");
+  background-image: url('./Images/Carrot.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-
 
 .tools {
-  background-image: url("./Images/GrdnTools.png");
+  background-image: url('./Images/GrdnTools.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-
 
 button {
   font-family: 'Eczar', serif;
@@ -153,11 +141,9 @@ button {
   background-color: rgb(96, 58, 184);
   border: 4px solid yellow;
   padding: 12px 20px;
-
- 
 }
 
-#reset{
+#reset {
   font-family: 'Eczar', serif;
   font-size: larger;
   color: yellow;
@@ -166,11 +152,4 @@ button {
   position: relative;
   top: 80px;
   padding: 12px 28px;
-
-
 }
-
-
-
-
-
