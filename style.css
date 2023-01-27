@@ -1,7 +1,7 @@
 body {
   text-align: center;
   font-family: 'Eczar', serif;
-  background-image: url("/Users/liz/ga_seir19/projects/Garden Rescue/Images/Garden.png");
+  background-image: url("./Images/Garden.png");
   height: 100vh;
   width: 100vw;
   background-size: cover;
@@ -33,7 +33,7 @@ h1{
   margin:auto;
   height: 780px;
   width: 780px;
-  background-image: url("https://i.imgur.com/bbzGxJT.png");
+  background-image: url("./Images/Scroll.png");
   background-size: 75%;
   background-repeat: no-repeat;
   background-position: center;
@@ -83,7 +83,7 @@ h2{
   height: 200px;
   width: 200px;
   border: 1px solid rgb(231, 238, 22);
-  background-image: url("/Users/liz/ga_seir19/projects/Garden Rescue/Images/Flowers.png");
+  background-image: url("./Images/Flowers.png");
   background-color: rgb(96, 58, 184);
   background-size: cover;
   background-repeat: no-repeat;
@@ -92,35 +92,35 @@ h2{
 }
 
 .ladybug {
-  background-image: url("/Users/liz/ga_seir19/projects/Garden Rescue/Images/Ladybug.png");
+  background-image: url("./Images/Ladybug.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .bee {
-  background-image: url("/Users/liz/ga_seir19/projects/Garden Rescue/Images/Bee.png");
+  background-image: url("./Images/Bee.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .broccoli {
-  background-image: url("/Users/liz/ga_seir19/projects/Garden Rescue/Images/Broccoli.png");
+  background-image: url("./Images/Broccoli.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .butterfly {
-  background-image: url("/Users/liz/ga_seir19/projects/Garden Rescue/Images/Butterfly.png");
+  background-image: url("./Images/Butterfly.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .carrot {
-  background-image: url("/Users/liz/ga_seir19/projects/Garden Rescue/Images/Carrot.png");
+  background-image: url("./Images/Carrot.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -128,7 +128,7 @@ h2{
 
 
 .tools {
-  background-image: url("/Users/liz/ga_seir19/projects/Garden Rescue/Images/GrdnTools.png");
+  background-image: url("./Images/GrdnTools.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
