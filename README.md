@@ -41,7 +41,7 @@ A garden themed memory card game! Geared toward small children, a player must fi
 
 ### _Credits_
 
-#### Resources: [MDN](https://developer.mozilla.org/en-US/), [W3Schools](https://www.w3schools.com/), [Google Fonts](https://fonts.google.com/specimen/Eczar?query=eczar), [Imgur](https://imgur.com/)
+#### Resources: [MDN](https://developer.mozilla.org/en-US/), [W3Schools](https://www.w3schools.com/), [Google Fonts](https://fonts.google.com/specimen/Eczar?query=eczar), [Imgur](https://imgur.com/) [CodeSpeedy](https:codespeedy.com/)
 
 #### Images: [Open Clipart](https://openclipart.org)
 
