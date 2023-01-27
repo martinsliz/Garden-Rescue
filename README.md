@@ -26,8 +26,9 @@ A garden themed memory card game! Geared toward small children, a player must fi
 
 ### Screenshots
 
-![Image](https://i.imgur.com/WXJR8uM.png)
-![Image](https://i.imgur.com/m56h3nF.png)
+![Image](https://i.imgur.com/Q0VNdY3.png)
+![Image](https://i.imgur.com/o0fUlKM.png)
+![Image](https://i.imgur.com/2PZAggu.png)
 
 ---
 
